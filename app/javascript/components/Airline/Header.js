@@ -35,7 +35,7 @@ const Header = (props) => {
         Airline Name
       </h1>
       <div>
-        <UserReviewCount>{total} User Reviews</UserReviewCount>
+        <UserReviewCount>{total} Reviews</UserReviewCount>
         <div src="starRating"></div>
         <ScoreOutOf>{avg_score} out of 5</ScoreOutOf>
       </div>

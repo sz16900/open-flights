@@ -72,6 +72,11 @@ const Airline = (props) => {
       .catch((err) => console.log(err));
   };
 
+  const setRating = (score, e) => {
+    e.preventDefault();
+    setReview({ ...review, score });
+  };
+
   return (
     <Wrapper>
       {loaded && (
@@ -90,6 +95,7 @@ const Airline = (props) => {
               handleChange={handleChange}
               handleSubmit={handleSubmit}
               attributes={airline.data.attributes}
+              setRating={setRating}
               review={review}
             />
           </Column>
